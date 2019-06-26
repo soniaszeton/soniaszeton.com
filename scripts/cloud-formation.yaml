@@ -20,16 +20,17 @@ Resources:
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: 404.html
-      CORSConfiguration:
-        "-xmlns": http://s3.amazonaws.com/doc/2006-03-01/
-        CORSRule:
-          AllowedOrigin: *
-          AllowedMethod: GET
-          MaxAgeSeconds: 3000
-          AllowedHeader:
+      CorsConfiguration:
+        CorsRules:
+        - AllowedHeaders:
           - Authorization
           - Content-*
           - Host
+          AllowedOrigins:
+          - '*'
+          AllowedMethods:
+          - GET
+          MaxAge: 3000
     DeletionPolicy: Retain
   WebsiteBucketPolicy:
     Type: AWS::S3::BucketPolicy
