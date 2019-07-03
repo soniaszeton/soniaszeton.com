@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <title>Sonia Szeton</title>
   <link href="../../css/final_style.css" rel="stylesheet">
+  <script src="../../js/final.js"></script>
 </head>
 
-<body>
+<body onload="currentSlide(1)">
   <a href="home.html"><img class="homebutton" src="../../img/logo.png" alt="logo"/></a>
   <div class="otherheader">
     <h1>Capstone</h1>
@@ -27,7 +28,7 @@
 
 
   <h6>Final Documentation</h6>
-  <h2>Code</h2>
+  <div class="capsubtitle"><b>Code</b></div>
   <p class="cap">There is a huge amount of data contained in Twitter, what’s tricky is finding a way to access it and then deciding how to use it. I started out with the intention of pulling tweets from a specific geo location (say Boulder, CO) and measuring the emotional tone using IBM’s Tone Analyzer and changing the color of the LEDs depending on the results. I was able to get the code working, but it wasn’t returning very many tweets, I knew there had to be more than 10 people tweeting in all of London, England over the course of a minute. The problem was that most people don’t add a geo tag to their tweets, so only a small percentage of tweets from a certain location were getting returned. </p>
 
   <p class="cap">I decided to abandon that route and return to my original idea of counting tweets containing  specific positive keywords and having the LEDs react when the counters reached a certain threshold. Getting the Twitter API to work was tricky, I played with both the Tweepy and Twython libraries trying to get the code to behave. The main issue I was running into was the strict call limits that Twitter APIs have. You can only pull about 100 tweets every 15 minutes before you’re locked out and the code shuts down, not ideal if you’re trying to live stream tweets. Finally I was able to find an API that was specifically meant for live streaming tweets and wouldn’t shut down after a few minutes. </p>
@@ -36,7 +37,7 @@
 
   <p class="cap">I tried hard to pick keywords to represent the emotions that didn’t have ambiguous meanings and that were equally popular so that the results wouldn’t be skewed one way or the other. It’s not a perfect system, but I tried to make it as fair as possible. I was initially worried that the emotional state of Twitter wouldn’t be what I’d hoped. I worried it would be more angry and sad and scared than happy and full of love, but I was extremely relieved to see that the most popular emotion by far was love.</p>
 
-  <h2>Fabrication</h2>
+  <div class="capsubtitle"><b>Fabrication</b></div>
 
   <p class="cap">I don’t have a lot of experience with fabrication, it was an interesting journey of learning mostly by doing. Estimating the amount of time certain steps would take was the biggest challenge for me. When you’re working with an unfamiliar material, it’s very hard to know how long something will take. The first tree I started to make was inspired by Tara Donovan’s work and was made entirely out of notecards. I figured out pretty quickly that there was absolutely no way that it would be finished in the timeframe needed. I had to scrap it and figure out a new material to use.</p>
 
@@ -54,71 +55,202 @@
 
 
   <h6>Top Box</h6>
-  <img class='resize_fit_center' src="../../img/box1.JPG" alt="box1"/>
-  <img class='resize_fit_center' src="../../img/box2.JPG" alt="box2"/>
-  <img class='resize_fit_center' src="../../img/box3.JPG" alt="box3"/>
-  <img class='resize_fit_center' src="../../img/box4.JPG" alt="box4"/>
-  <img class='resize_fit_center' src="../../img/box5.JPG" alt="box5"/>
-  <img class='resize_fit_center' src="../../img/box6.JPG" alt="box6"/>
-  <img class='resize_fit_center' src="../../img/box7.JPG" alt="box7"/>
-  <img class='resize_fit_center' src="../../img/box8.JPG" alt="box8"/>
-  <img class='resize_fit_center' src="../../img/box9.JPG" alt="box9"/>
-  <img class='resize_fit_center' src="../../img/box10.JPG" alt="box10"/>
-  <img class='resize_fit_center' src="../../img/box11.JPG" alt="box11"/>
-  <img class='resize_fit_center' src="../../img/box12.JPG" alt="box12"/>
-  <img class='resize_fit_center' src="../../img/box13.JPG" alt="box13"/>
-  <img class='resize_fit_center' src="../../img/box14.JPG" alt="box14"/>
-  <img class='resize_fit_center' src="../../img/box15.jpeg" alt="box15"/>
-  <img class='resize_fit_center' src="../../img/box16.JPG" alt="box16"/>
-  <img class='resize_fit_center' src="../../img/box17.JPG" alt="box17"/>
-  <img class='resize_fit_center' src="../../img/box18.JPG" alt="box18"/>
-  <img class='resize_fit_center' src="../../img/box19.JPG" alt="box19"/>
-  <img class='resize_fit_center' src="../../img/box20.JPG" alt="box20"/>
-  <img class='resize_fit_center' src="../../img/box21.JPG" alt="box21"/>
-  <img class='resize_fit_center' src="../../img/box22.JPG" alt="box22"/>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="../../img/box1.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box2.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box3.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box4.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box6.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box7.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box8.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box11.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box12.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box13.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box14.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box15.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box16.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box17.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box18.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box19.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box20.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box21.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/box22.jpg" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+    <span class="dot" onclick="currentSlide(14)"></span>
+    <span class="dot" onclick="currentSlide(15)"></span>
+    <span class="dot" onclick="currentSlide(16)"></span>
+    <span class="dot" onclick="currentSlide(17)"></span>
+    <span class="dot" onclick="currentSlide(18)"></span>
+    <span class="dot" onclick="currentSlide(19)"></span>
+    <span class="dot" onclick="currentSlide(20)"></span>
+    <span class="dot" onclick="currentSlide(21)"></span>
+    <span class="dot" onclick="currentSlide(22)"></span>
+  </div>
   
 
   <h6>Prototyping Bulb Placement</h6>
 
-  <img class='resize_fit_center' src="../../img/protostruc1.JPG" alt="protostruc1"/>
-  <img class='resize_fit_center' src="../../img/protostruc2.JPG" alt="protostruc2"/>
-  <img class='resize_fit_center' src="../../img/protostruc3.jpg" alt="protostruc3"/>
-  <img class='resize_fit_center' src="../../img/protostruc4.jpg" alt="protostruc4"/>
-  <img class='resize_fit_center' src="../../img/protostruc5.JPG" alt="protostruc5"/>
-  <img class='resize_fit_center' src="../../img/protostruc6.JPG" alt="protostruc6"/>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="../../img/protostruc1.JPG" style="width:100%">
+    </div>
 
+    <div class="mySlides fade">
+      <img src="../../img/protostruc2.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/protostruc3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/protostruc4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/protostruc5.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../../img/protostruc6.JPG" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
 
   <h6>Tree 2.0</h6>
 
   <p class="cap">Finishing the tree out of notecards just wasn't realistic with the deadline approaching, so I needed to change course and choose a different material to make it out of. I finally decided on tin foil because it's affordable and workable. I don't want it to end up looking too arts & craft-y, but I think if I hammer, sand, and polish the foil enough it will hopefully look more like traditional metal than a bunch of tin foil scrunched together.</p>
 
   <h2>Creating the basic shape</h2>
-  <img class='resize_fit_center' src="../../img/T2process1.JPEG" alt="T2process1"/>
-  <img class='resize_fit_center' src="../../img/T2process2.JPEG" alt="T2process2"/>
-  <img class='resize_fit_center' src="../../img/T2process3.JPEG" alt="T2process3"/>
-  <img class='resize_fit_center' src="../../img/T2process4.JPEG" alt="T2process4"/>
-  <img class='resize_fit_center' src="../../img/T2process5.JPEG" alt="T2process5"/>
-  <img class='resize_fit_center' src="../../img/T2process6.JPEG" alt="T2process6"/>
+  <img class='resize_fit_center' src="../../img/T2process1.jpeg" alt="T2process1"/>
+  <img class='resize_fit_center' src="../../img/T2process2.jpeg" alt="T2process2"/>
+  <img class='resize_fit_center' src="../../img/T2process3.jpeg" alt="T2process3"/>
+  <img class='resize_fit_center' src="../../img/T2process4.jpeg" alt="T2process4"/>
+  <img class='resize_fit_center' src="../../img/T2process5.jpeg" alt="T2process5"/>
+  <img class='resize_fit_center' src="../../img/T2process6.jpeg" alt="T2process6"/>
   <h2>Adding layers so the branches will be thick enough after they are hammered</h2>
-  <img class='resize_fit_center' src="../../img/T2process7.JPEG" alt="T2process7"/>
+  <img class='resize_fit_center' src="../../img/T2process7.jpeg" alt="T2process7"/>
   <h2>Finishing to base so the tree can stand on it's own</h2>
-  <img class='resize_fit_center' src="../../img/T2process8.jpg" alt="T2process8"/>
+  <img class='resize_fit_center' src="../../img/T2process8.JPG" alt="T2process8"/>
   <h2>Started to compress and smooth the foil with a hammer, but to really get all the layers to cling to each other the base and branches need to be compressed from all sides</h2>
-  <img class='resize_fit_center' src="../../img/T2process9.jpg" alt="T2process9"/>
+  <img class='resize_fit_center' src="../../img/T2process9.JPG" alt="T2process9"/>
   <p class='cap'>
   Wrapping the branches with a piece of cloth and twisting put pressure on all sides and compressed the foil better. It wasn't a perfect method though and squeezing and shaping by hand turned out to be the best way to compress the smaller branches.</p>
-  <img class='resize_fit_center' src="../../img/T2process10.jpg" alt="T2process10"/>
+  <img class='resize_fit_center' src="../../img/T2process10.JPG" alt="T2process10"/>
   <img class='resize_fit_center' src="../../img/T2process11.jpg" alt="T2process11"/>
   <img class='resize_fit_center' src="../../img/T2process12.jpg" alt="T2process12"/>
   <h2>More hammering and smoothing by hand</h2>
-  <img class='resize_fit_center' src="../../img/T2process13.jpg" alt="T2process13"/>
+  <img class='resize_fit_center' src="../../img/T2process13.JPG" alt="T2process13"/>
   <p class = "cap">Because of the shape of the tree, there was no way to hammer it to a point where it wouldn't look like tin foil. I needed to cover it with something to make it look more polished and complete. After learning about it in my Material class, I decided to use quick setting concrete. Concrete doesn't react very well to aluminum so fist the tree had to be covered with plastic wrap. I added dots of hot glue to the body of the tree to add some texture and make sure the concrete wouldn't just slide off. From there I started mixing concrete and applying it to the tree by hand until it looked smooth enough.</p>
   <img class='resize_fit_center' src="../../img/T2process14.jpg" alt="T2process14"/>
-  <img class='resize_fit_center' src="../../img/T2process15.jpg" alt="T2process15"/>
+  <img class='resize_fit_center' src="../../img/T2process15.JPG" alt="T2process15"/>
   <img class='resize_fit_center' src="../../img/T2process16.jpg" alt="T2process16"/>
-  <img class='resize_fit_center' src="../../img/T2process17.jpg" alt="T2process17"/>
-  <img class='resize_fit_center' src="../../img/T2process18.jpg" alt="T2process18"/>
-  <img class='resize_fit_center' src="../../img/T2process19.jpg" alt="T2process19"/>
+  <img class='resize_fit_center' src="../../img/T2process17.JPG" alt="T2process17"/>
+  <img class='resize_fit_center' src="../../img/T2process18.JPG" alt="T2process18"/>
+  <img class='resize_fit_center' src="../../img/T2process19.JPG" alt="T2process19"/>
 
   <h6>Mentor Feedback</h6>
 
@@ -177,9 +309,9 @@
 
   <p class="cap">It's been a while since I worked with an Arduino and sensors, I thought it would be good to practice with the Arduino that's going to be used in the final project. The warm-up project is pretty simple, it takes an Adafruit Feather and color sensor and changes the color of a strand of NeoPixels to whatever color the sensor is reading in. It took longer than expected to get all the proper libraries and ports connected, but I feel like I have a good grasp on how that process works now. The logic for the algorithm is pretty simple and there are similar examples online that were good to look at. I was able to get it working without too much trouble and I got to practice my soldering. </p>
 
-  <img class='resize_fit_center' src="../../img/colorsensor1.jpg" alt="CS1"/>
+  <img class='resize_fit_center' src="../../img/colorsensor1.JPG" alt="CS1"/>
   <img class='resize_fit_center' src="../../img/colorsensor2.jpg" alt="CS2"/>
-  <img class='resize_fit_center' src="../../img/colorsensor3.jpg" alt="CS3"/>
+  <img class='resize_fit_center' src="../../img/colorsensor3.JPG" alt="CS3"/>
   <img class='resize_fit_center' src="../../img/colorsensor4.jpg" alt="CS4"/>
 
   <p class="cap"><b>Cardboard Tree</b></p>
@@ -187,22 +319,22 @@
   <p class="cap">The tree structure is what I'll need to build first next semester, so I need to start making concrete decisions about what material I'm going to use and how it's going to be put together. I thought about trying to make a geometric tree by gluing together different dimentioned trapezoidal prisms, but I thought the cuts would need to be too precise to just wing it. I played with the idea of a more abstract tree by cutting out different shapes with paper and connecting them, but it wasn't turning out how I wanted it to. I knew it would be tedious, but I decided to try a stacking method. Cutting out orgainic shapes is what I started doing, but soon realized it would take far too long to get the amount of layers and height I needed. Finally I started hand cutting and stacking cardboard circles and elipses to create a tree. My thought was to 3D print the tree, but by hand. It really made me think about how a tree grows and what I needed to do to make it look realistic. It also gave me an idea of just how long it would take to do such a large tree using this method of fabrication. I'm thinking about scaling the tree down from what I originally had in mind. I might just have to be satisfied with a tabletop tree. I'm still debatng about what I should use for the material. I'm trying to think of what's affordable and won't take me ages to do. I could follow in Tara Donovan's footsteps and make it out notecards, they are so thin though it would still take an extremely long time to complete. Thick corrugated cardboard might work, I just want to make sure the finished product looks polished and not like an elaborate prototype. </p>
  
   <img class='resize_fit_center' src="../../img/treeproto1.jpg" alt="TP1"/>
-  <img class='resize_fit_center' src="../../img/treeproto2.jpg" alt="TP2"/>
-  <img class='resize_fit_center' src="../../img/treeproto3.jpg" alt="TP3"/>
+  <img class='resize_fit_center' src="../../img/treeproto2.JPG" alt="TP2"/>
+  <img class='resize_fit_center' src="../../img/treeproto3.JPG" alt="TP3"/>
 
   <p class="cap"><b>Twitter API</b></p>
 
   <p class="cap">There was a lot to learn about a Twitter API, especially because I've never used Twitter. Getting the API running was slightly more complicated than I thought it would be, but that's always how these things go. I was very lucky to have my programmer friend Taylor there to help me with the process. First we created an account for the wishing tree, then had to apply for delveloper credentials in order to get the key for an API. After briefly having the account shut down for "suspicious behavior" we were able to get the credentials and key that we needed. We used that Tweepy library to write the script. It took a while to figure out which functions we needed, but in the end we were able to read in the search data from a hashtag. Going forward we will need to figure out how to parse the information we need and from there decide on what hashtags to use and what the threshold on the counters should be. </p>
 
-  <img class='resize_fit_center' src="../../img/twitter1.jpg" alt="API1"/>
-  <img class='resize_fit_center' src="../../img/twitter2.jpg" alt="API2"/>
-  <img class='resize_fit_center' src="../../img/twitter3.jpg" alt="API3"/>
+  <img class='resize_fit_center' src="../../img/twitter1.JPG" alt="API1"/>
+  <img class='resize_fit_center' src="../../img/twitter2.JPG" alt="API2"/>
+  <img class='resize_fit_center' src="../../img/twitter3.JPG" alt="API3"/>
 
   <p class="cap"><b>Paper Lanterns</b></p>
 
   <p class="cap">The NeoPixels on the tree need to have some sort of enclosure around them and folded paper lanterns seems like a good, affordable option. It was surprisingly difficult to find good tutorials for orgigami lanterns that weren't ridiculously time consuming and were within my folding ability. Even the simple designs took a long time to get right. I'm sure if I had to fold more than 50 of them I would get a lot faster, but of the designs I tried there wasn't one I liked enough to want to do that. It's possible I havn't looked hard enough for a better design, but I'm thinking about trying to find affordable christmas lights that I can steal the bulbs from instead. Also, if the size of the tree gets scaled down, it will change what designs would work for the lanterns.
 
-  <img class='resize_fit_center' src="../../img/lanternsproto.jpg" alt="lanternsproto"/>
+  <img class='resize_fit_center' src="../../img/lanternsproto.JPG" alt="lanternsproto"/>
 
   <h6>Interviews</h6>
   <p class="cap"><b>Material | Danny Rankin</b></p>

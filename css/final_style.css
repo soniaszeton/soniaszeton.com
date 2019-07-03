@@ -221,7 +221,7 @@ img.signature{
 
 img.insta{
   margin-left:95%;
-  margin-top: -3%;
+  margin-top: -15%;
   width: 45px;
   height: 33px;
 }
@@ -492,21 +492,29 @@ p.curlyblock {
 }
 
 p.cap {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.25em;
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
+  width: 75%;
   text-align: left;
   font-family: "Domine";
 }
 
 h6 {
-  font-size: 2em;
-  margin-left: 5%;
+  font-size: 3em;
+  margin-left: auto;
   margin-bottom: 0.5%;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.capsubtitle {
+  font-size: 1.8em;
   text-align: left;
   font-family: "Montserrat";
+  margin-left: 12.5%;
+  margin-top: 3%;
 }
 
 * {box-sizing:border-box}
@@ -610,20 +618,31 @@ a:hover {
   color: rgb(0,0,0,1);
 }
 
+.homefooter2{
+  width: 100%;
+  background-color: #efefef;
+}
+
 .footer2{
   width: 100%;
-  height: 5%;
   background-color: #efefef;
+  padding-bottom: 1.2%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 2%;
+}
+
+.footertext{
   text-align: center;
-  font-size: 15px;
+  font-size: 2.2vh;
   font-family: 'Montserrat';
-  color: rgb(0,0,0,1);
-  margin-top: 5%;
-  padding-top: 10px;
+  color: rgba(0,0,0,1);
+  padding-top: 1.3%;
 }
 
 img.copyright{
-  height: 11px;
+  width: 1%;
 }
 
 ul{
@@ -804,6 +823,58 @@ ul{
   img.myprojectpic{
     width: 100%;
   }
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+  .choiceprojects{
+    display: block;
+    width: 44%;
+  }
+  img.choicepic{
+    display: block;
+    width: 320px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectdes{
+    color: rgba(0,0,0,1);
+    font-family: "Domine";
+    font-size: 20px;
+    text-align: center;
+  }
+  .projectdate{
+    color: rgba(134,135,135,1);
+    font-family: "Domine";
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3vw;
+    text-align: center;
+  }
+  .homedescription{
+    width: 65%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 3.1vw;
+  }
+  #photos{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  img.myprojectpic{
+    width: 100%;
+
+  }
   .paperink {
     display: block;
     margin-left: auto;
@@ -821,31 +892,34 @@ ul{
     /*margin-left: 7%; */
     margin: auto;
     width: 80%;
-    font-size: 2.7vh;
+    font-size: 4.5vh;
   }
   .inktitle{
     text-align: center;
     font-family: 'Montserrat';
-    font-size: 3.5vh;
-    margin-top: -4%;
+    font-size: 6.5vh;
+    margin-top: 1%;
     margin-bottom: 3%;
   }
   p.button{
     font-family: 'Montserrat';
-    font-size: 2vh;
+    font-size: 4vh;
     text-align: center;
     color: white;
-  }
-  .topmenubar{
-    position: -webkit-sticky;
-    position: sticky;
-    margin-top: -9%;
   }
   h2 {
     color: rgba(0,0,0,1);
     font-family: "Montserrat";
-    font-size: 2.6vw;
+    font-size: 3vw;
     text-align: center;
+  }
+  header {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 2%;
+    font-weight: 900;  
   }
   .resumechild{
     width: 95%;
@@ -866,14 +940,1130 @@ ul{
     font-size: 3.5vw;
     text-align: center;
   }
-  img.homebutton{
-    position:fixed;
-    top: 7px;
-    left: 7px;
+  .curly {
     display: block;
-    width: 60px;
-    height: 59px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  p.curlyblock {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+    width: 55%;
+    font-family: "Domine";
+    font-size: 4vh;
+  }
+  img.homebutton{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 110px;
+    height: 109px;
+  }
+  img.insta{
+    width: 0px;
+    height: 0px;
+  }
+  img.logo{
+    display: block;
+    width: 31%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    z-index: 200;
   }
 
 }
 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+  .choiceprojects{
+    display: block;
+    width: 95%;
+    margin-right: 6%;
+  }
+  img.choicepic{
+    display: block;
+    width: 520px;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.insta{
+    width: 0px;
+    height: 0px;
+  }
+  .projectdes{
+    color: rgba(0,0,0,1);
+    font-family: "Domine";
+    font-size: 15px;
+    text-align: center;
+    margin-top: -15px;
+  }
+  .curly {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  p.curlyblock {
+    margin-left: 19%;
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+    width: 64%;
+    font-family: "Domine";
+  }
+  .menubar{
+    width: 90%;
+    margin-left: 5%;
+    position: static;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3vw;
+    text-align: center;
+  }
+  .homedescription{
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 4.9vw;
+  }
+  .homepage{
+    background-image: url("../img/mobileback2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px;
+  }
+  img.myprojectpic{
+    width: 100%;
+
+  }
+  .paperink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    background-image: url("../img/mobilepaper.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 12%;
+    padding-bottom: 15%;
+  }
+  .inkdescription{
+    /*margin-left: 7%; */
+    margin: auto;
+    width: 80%;
+    font-size: 2.7vh;
+  }
+  .inktitle{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 4.3vh;
+    margin-top: 107%;
+    margin-bottom: 5%;
+  }
+  p.button{
+    font-family: 'Montserrat';
+    font-size: 2.5vh;
+    text-align: center;
+    color: white;
+  }
+
+  .workbutton{
+    width: 35%;
+    margin: auto;
+    background-color: black;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    border-radius: 2px;
+  }
+
+  h2 {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 5vw;
+    text-align: center;
+  }
+  header {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 3.5vw;
+    margin-top: 2%;
+    font-weight: 900;  
+  }
+  .otherheader{
+    font-family: 'Montserrat';
+    font-size: 4.5vw;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    color: rgba(0,0,0,1);
+  }
+  .resumechild{
+    width: 95%;
+    margin-left: 3%;
+    font-family: "Domine";
+    padding-bottom: 30px;
+  }
+  .expbody{
+    font-family: "Domine";
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 60px;
+    padding-bottom: 10px;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3.8vw;
+    text-align: center;
+  }
+  #photos{
+    -moz-column-count: 1;
+    -webit-column-count: 1;
+    column-count: 1;
+  }
+  img.homebutton{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 150px;
+    height: 148px;
+  }
+  img.logo{
+    display: block;
+    width: 46%;
+    height: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    z-index: 200;
+  }
+
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+  .choiceprojects{
+    display: block;
+    width: 44%;
+  }
+  img.choicepic{
+    display: block;
+    width: 320px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectdes{
+    color: rgba(0,0,0,1);
+    font-family: "Domine";
+    font-size: 20px;
+    text-align: center;
+  }
+  .projectdate{
+    color: rgba(134,135,135,1);
+    font-family: "Domine";
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3vw;
+    text-align: center;
+  }
+  .homedescription{
+    width: 65%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 3.1vw;
+  }
+  #photos{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  img.myprojectpic{
+    width: 100%;
+
+  }
+  .paperink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    background-image: url("../img/paperink4.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 12%;
+    padding-bottom: 15%;
+  }
+  .inkdescription{
+    /*margin-left: 7%; */
+    margin: auto;
+    width: 80%;
+    font-size: 4.5vh;
+  }
+  .inktitle{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 6.5vh;
+    margin-top: 1%;
+    margin-bottom: 3%;
+  }
+  p.button{
+    font-family: 'Montserrat';
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+  }
+  h2 {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3vw;
+    text-align: center;
+  }
+  header {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 2%;
+    font-weight: 900;  
+  }
+  .resumechild{
+    width: 95%;
+    margin-left: 3%;
+    font-family: "Domine";
+    padding-bottom: 30px;
+  }
+  .expbody{
+    font-family: "Domine";
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 60px;
+    padding-bottom: 10px;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3.5vw;
+    text-align: center;
+  }
+  .curly {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  p.curlyblock {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+    width: 55%;
+    font-family: "Domine";
+    font-size: 4vh;
+  }
+  img.homebutton{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 110px;
+    height: 109px;
+  }
+  img.insta{
+    width: 0px;
+    height: 0px;
+  }
+  img.logo{
+    display: block;
+    width: 31%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    z-index: 200;
+  }
+
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+  .choiceprojects{
+    display: block;
+    width: 95%;
+    margin-right: 6%;
+  }
+  img.choicepic{
+    display: block;
+    width: 520px;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.copyright{
+    width: 3%;
+  }
+  img.insta{
+    width: 0px;
+    height: 0px;
+  }
+  .projectdes{
+    color: rgba(0,0,0,1);
+    font-family: "Domine";
+    font-size: 15px;
+    text-align: center;
+    margin-top: -15px;
+  }
+  .curly {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  p.curlyblock {
+    margin-left: 19%;
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+    width: 64%;
+    font-family: "Domine";
+  }
+  .menubar{
+    width: 90%;
+    margin-left: 5%;
+    position: static;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3vw;
+    text-align: center;
+  }
+  .homedescription{
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 4.9vw;
+  }
+  .homepage{
+    background-image: url("../img/mobileback2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px;
+  }
+  img.myprojectpic{
+    width: 100%;
+
+  }
+  .paperink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    background-image: url("../img/mobilepaper.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 12%;
+    padding-bottom: 15%;
+  }
+  .inkdescription{
+    /*margin-left: 7%; */
+    margin: auto;
+    width: 80%;
+    font-size: 2.7vh;
+  }
+  .inktitle{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 4.3vh;
+    margin-top: 107%;
+    margin-bottom: 5%;
+  }
+  p.button{
+    font-family: 'Montserrat';
+    font-size: 2.5vh;
+    text-align: center;
+    color: white;
+  }
+
+  .workbutton{
+    width: 35%;
+    margin: auto;
+    background-color: black;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    border-radius: 2px;
+  }
+
+  h2 {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 5vw;
+    text-align: center;
+  }
+  header {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 3.5vw;
+    margin-top: 2%;
+    font-weight: 900;  
+  }
+  .otherheader{
+    font-family: 'Montserrat';
+    font-size: 4.5vw;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    color: rgba(0,0,0,1);
+  }
+  .resumechild{
+    width: 95%;
+    margin-left: 3%;
+    font-family: "Domine";
+    padding-bottom: 30px;
+  }
+  .expbody{
+    font-family: "Domine";
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 60px;
+    padding-bottom: 10px;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3.8vw;
+    text-align: center;
+  }
+  #photos{
+    -moz-column-count: 1;
+    -webit-column-count: 1;
+    column-count: 1;
+  }
+  img.homebutton{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 150px;
+    height: 148px;
+  }
+  img.logo{
+    display: block;
+    width: 46%;
+    height: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    z-index: 200;
+  }
+}
+
+/* iPhone X */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
+  .choiceprojects{
+    display: block;
+    width: 44%;
+  }
+  img.choicepic{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectdes{
+    color: rgba(0,0,0,1);
+    font-family: "Domine";
+    font-size: 20px;
+    text-align: center;
+  }
+  .projectdate{
+    color: rgba(134,135,135,1);
+    font-family: "Domine";
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3vw;
+    text-align: center;
+  }
+  .homedescription{
+    width: 65%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 3.1vw;
+  }
+  #photos{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  img.myprojectpic{
+    width: 100%;
+
+  }
+  .paperink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    background-image: url("../img/paperink4.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 12%;
+    padding-bottom: 15%;
+  }
+  .inkdescription{
+    /*margin-left: 7%; */
+    margin: auto;
+    width: 80%;
+    font-size: 4.5vh;
+  }
+  .inktitle{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 6.5vh;
+    margin-top: 1%;
+    margin-bottom: 3%;
+  }
+  p.button{
+    font-family: 'Montserrat';
+    font-size: 6vh;
+    text-align: center;
+    color: white;
+  }
+  .workbutton{
+    width: 30%;
+    margin: auto;
+    background-color: black;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    border-radius: 2px;
+  }
+  h2 {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3vw;
+    text-align: center;
+  }
+  header {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 2%;
+    font-weight: 900;  
+  }
+  .resumechild{
+    width: 95%;
+    margin-left: 3%;
+    font-family: "Domine";
+    padding-bottom: 30px;
+  }
+  .expbody{
+    font-family: "Domine";
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 60px;
+    padding-bottom: 10px;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3.5vw;
+    text-align: center;
+  }
+  .curly {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  p.curlyblock {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+    width: 55%;
+    font-family: "Domine";
+    font-size: 4vh;
+  }
+  img.homebutton{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 110px;
+    height: 109px;
+  }
+  img.insta{
+    width: 0px;
+    height: 0px;
+  }
+  img.logo{
+    display: block;
+    width: 31%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5%;
+    z-index: 200;
+  }
+
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+  .choiceprojects{
+    display: block;
+    width: 95%;
+    margin-right: 6%;
+  }
+  img.choicepic{
+    display: block;
+    width: 520px;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.copyright{
+    width: 3%;
+  }
+  img.insta{
+    width: 0px;
+    height: 0px;
+  }
+  .projectdes{
+    color: rgba(0,0,0,1);
+    font-family: "Domine";
+    font-size: 15px;
+    text-align: center;
+    margin-top: -15px;
+  }
+  .curly {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  p.curlyblock {
+    margin-left: 19%;
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+    width: 64%;
+    font-family: "Domine";
+  }
+  .menubar{
+    width: 90%;
+    margin-left: 5%;
+    position: static;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3vw;
+    text-align: center;
+  }
+  .homedescription{
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 4.9vw;
+  }
+  .homepage{
+    background-image: url("../img/mobileback2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px;
+  }
+  img.myprojectpic{
+    width: 100%;
+
+  }
+  .paperink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    background-image: url("../img/mobilepaper.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 12%;
+    padding-bottom: 15%;
+  }
+  .inkdescription{
+    /*margin-left: 7%; */
+    margin: auto;
+    width: 80%;
+    font-size: 2.5vh;
+  }
+  .inktitle{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 3.3vh;
+    margin-top: 107%;
+    margin-bottom: 5%;
+  }
+  p.button{
+    font-family: 'Montserrat';
+    font-size: 2.5vh;
+    text-align: center;
+    color: white;
+  }
+
+  .workbutton{
+    width: 45%;
+    margin: auto;
+    background-color: black;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    border-radius: 2px;
+  }
+
+  h2 {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 5vw;
+    text-align: center;
+  }
+  header {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 3.5vw;
+    margin-top: 2%;
+    font-weight: 900;  
+  }
+  .otherheader{
+    font-family: 'Montserrat';
+    font-size: 4.5vw;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    color: rgba(0,0,0,1);
+  }
+  .resumechild{
+    width: 95%;
+    margin-left: 3%;
+    font-family: "Domine";
+    padding-bottom: 30px;
+  }
+  .expbody{
+    font-family: "Domine";
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 60px;
+    padding-bottom: 10px;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3.8vw;
+    text-align: center;
+  }
+  #photos{
+    -moz-column-count: 1;
+    -webit-column-count: 1;
+    column-count: 1;
+  }
+  img.homebutton{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 150px;
+    height: 148px;
+  }
+  img.logo{
+    display: block;
+    width: 46%;
+    height: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    z-index: 200;
+  }
+  .footer2{
+    background-color: #FFFFFF;
+  }
+  .footertext{
+    color: white;
+    font-size: 1px;
+  }
+  .copyright{
+    width: 0px;
+    height: 0px;
+  }
+
+}
+
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) 
+and (orientation : landscape) {
+  img.choicepic{
+    display: block;
+    width: 220px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectdes{
+    color: rgba(0,0,0,1);
+    font-family: "Domine";
+    font-size: 17px;
+    text-align: center;
+  }
+  .projectdate{
+    color: rgba(134,135,135,1);
+    font-family: "Domine";
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  h2 {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 4vw;
+    text-align: center;
+  }
+  img.homebutton{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 80px;
+    height: 79px;
+  }
+}
+
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) 
+and (orientation : portrait) {
+  .choiceprojects{
+    display: block;
+    width: 95%;
+    margin-right: 6%;
+  }
+  img.choicepic{
+    display: block;
+    width: 520px;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.insta{
+    width: 0px;
+    height: 0px;
+  }
+  .projectdes{
+    color: rgba(0,0,0,1);
+    font-family: "Domine";
+    font-size: 15px;
+    text-align: center;
+    margin-top: -15px;
+  }
+  .curly {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  p.curlyblock {
+    margin-left: 19%;
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+    width: 64%;
+    font-family: "Domine";
+  }
+  .menubar{
+    width: 90%;
+    margin-left: 5%;
+    position: static;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3vw;
+    text-align: center;
+  }
+  .homedescription{
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 4.9vw;
+  }
+  .homepage{
+    background-image: url("../img/mobileback2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px;
+  }
+  img.myprojectpic{
+    width: 100%;
+
+  }
+  .paperink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    background-image: url("../img/mobilepaper.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 12%;
+    padding-bottom: 15%;
+  }
+  .inkdescription{
+    /*margin-left: 7%; */
+    margin: auto;
+    width: 80%;
+    font-size: 2.7vh;
+  }
+  .inktitle{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 4.3vh;
+    margin-top: 107%;
+    margin-bottom: 5%;
+  }
+  p.button{
+    font-family: 'Montserrat';
+    font-size: 2.5vh;
+    text-align: center;
+    color: white;
+  }
+
+  .workbutton{
+    width: 35%;
+    margin: auto;
+    background-color: black;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    border-radius: 2px;
+  }
+
+  h2 {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 5vw;
+    text-align: center;
+  }
+  header {
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 3.5vw;
+    margin-top: 2%;
+    font-weight: 900;  
+  }
+  .otherheader{
+    font-family: 'Montserrat';
+    font-size: 4.5vw;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    color: rgba(0,0,0,1);
+  }
+  .resumechild{
+    width: 95%;
+    margin-left: 3%;
+    font-family: "Domine";
+    padding-bottom: 30px;
+  }
+  .expbody{
+    font-family: "Domine";
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 60px;
+    padding-bottom: 10px;
+  }
+  .nounderline{
+    color: rgba(0,0,0,1);
+    font-family: "Montserrat";
+    font-size: 3.8vw;
+    text-align: center;
+  }
+  #photos{
+    -moz-column-count: 1;
+    -webit-column-count: 1;
+    column-count: 1;
+  }
+  img.homebutton{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 150px;
+    height: 148px;
+  }
+  img.logo{
+    display: block;
+    width: 46%;
+    height: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    z-index: 200;
+  }
+}
