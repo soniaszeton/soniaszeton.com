@@ -19,6 +19,108 @@ header{
 }
 
 
+#newnav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 1;
+}
+
+.testingmenu { 
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  font-family: "Montserrat";
+  margin-right: 2%;
+}
+
+#newnav img {
+  float: left;
+  display: block;
+  height: 45px;
+/*
+  width: 21%;
+  margin-top: .4%;
+  margin-bottom: .4%;
+*/
+  padding: 5px;
+  margin-left: 3%;
+}
+
+#newnav a:hover {
+  color: DarkGray;
+}
+
+/*
+img.navlogo {
+  margin-right: 75%;
+  width: 23%;
+}
+*/
+
+.topproject {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 4%;
+}
+
+.topproject img {
+  width: 50%;
+}
+
+.topproject .description {
+  float: left;
+  width: 50%;
+  max-height: 100%;
+  padding: 0 40px 40px;
+  overflow: auto;
+}
+
+.topproject .description2 {
+  float: right;
+  width: 50%;
+  max-height: 100%;
+  padding: 0 40px 40px;
+  overflow: auto;
+}
+
+.topproject h1 {
+  font-family: "Montserrat";
+  font-size: 3.3vw;
+  margin-top: 5%;
+}
+
+.topproject h3 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.topproject h2 {
+  font-family: "Montserrat";
+  font-size: 1.9vw;
+  font-style: italic;
+  text-align: left;
+  color: rgba(134,135,135,1);
+  margin-top: -5%;
+  margin-bottom: 2%;
+}
+
+.topproject p {
+  font-family: "Domine";
+  font-size: 1.5vw;
+  margin-top: 2%;
+  line-height: 20pt;
+  text-decoration: none; 
+}
+
 .homepage{
   background-image: url("../img/backtest.jpg");
   background-attachment: fixed;
@@ -119,6 +221,10 @@ hr{
   padding-bottom: 2px;
 }
 
+.colorblock{
+  width: 15%;
+  margin-top: 3%;
+}
 .exptitle{
   color: rgba(0,0,0,1);
   font-family: "Montserrat";
@@ -146,9 +252,10 @@ hr{
 
 .projectdes{
   color: rgba(0,0,0,1);
-  font-family: "Domine";
-  font-size: 15px;
+  font-family: 'Domine';
+  font-size: 17px;
   text-align: center;
+  margin-top: -12px;
 }
 
 .projectdate{
@@ -179,8 +286,8 @@ img.logo{
 
 img.choicepic{
   display: block;
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -266,6 +373,12 @@ img.upbeetlogo {
   z-index: 100;
 }
 
+.menubar2{
+  padding-bottom: 30px;
+  top:0;
+  z-index: 100;
+}
+
 .topmenubar{
   position: -webkit-sticky;
   position: sticky;
@@ -318,12 +431,46 @@ img.paperpic{
   font-size: 2.3vw;
 }
 
+.creativedescription{
+    width: 60%;
+    margin: auto;
+    padding-top: 3%;
+    font-size: 16pt;
+    font-style: italic;
+}
+
+.creativebar{
+  width: 25%;
+  height: 3px;
+  margin: auto;
+  background-color: black;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+
+.plainbar{
+  width: 15%;
+  height: 3px;
+  margin: auto;
+  background-color: black;
+  border-radius: 10px;
+  margin-top: -2%;
+  margin-bottom: 4%;
+}
+
 .workbutton{
   width: 18%;
   margin: auto;
   background-color: black;
   padding-top: 0.1%;
   padding-bottom: 0.1%;
+  border-radius: 2px;
+}
+
+.contactbutton{
+  width: 50%;
+  margin: auto;
+  background-color: black;
   border-radius: 2px;
 }
 
@@ -334,6 +481,14 @@ p.button{
   color: white;
 }
 
+p.cbutton{
+  font-family: 'Montserrat';
+  font-size: 2.9vh;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .choiceparent{
   display: flex;
   flex-flow: row wrap;
@@ -344,7 +499,7 @@ p.button{
 .choiceprojects{
   width: 28%;
   margin-left: 4%;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-bottom: 5%;
 }
 
@@ -396,9 +551,10 @@ p.button{
 .otherheader{
   font-family: 'Montserrat';
   font-size: 3vw;
+  font-weight: normal;
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: 7%;
+  margin-top: 6%;
+  margin-bottom: 5%;
   color: rgba(0,0,0,1);
 }
 
@@ -460,6 +616,14 @@ p.button{
   text-align: center;
 }
 
+.matprocess{
+  font-family: "Domine";
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 5%;
+  text-align: center;
+}
+
 .mavenformat {
   display: block;
   margin-left: auto;
@@ -507,6 +671,7 @@ h6 {
   margin-bottom: 0.5%;
   text-align: center;
   font-family: "Montserrat";
+  margin-top: 1%;
 }
 
 .capsubtitle {
@@ -520,8 +685,16 @@ h6 {
 * {box-sizing:border-box}
 
 /* Slideshow container */
+.slideshow-capstone {
+  width: 70%;
+  position: relative;
+  margin: auto;
+  margin-top: 3%;
+}
+
+/* Slideshow container */
 .slideshow-container {
-  max-width: 900px;
+  width: 75%;
   position: relative;
   margin: auto;
   margin-top: 3%;
@@ -563,12 +736,156 @@ h6 {
   display: inline-block;
   transition: background-color 0.6s ease;
   margin-bottom: 50px;
+}
 
+.dot-1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+}
+
+.dot-2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+}
+
+.dot-3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+}
+
+.dot-4 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+}
+
+.dot-5 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+}
+
+.dot-6 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+}
+
+.dot-7 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+}
+
+.dot-8 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+}
+
+.dot-9 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
 }
 
 .active, .dot:hover {
   background-color: #717171;
 }
+
+.active, .dot-1:hover {
+  background-color: #717171;
+}
+
+.active, .dot-2:hover {
+  background-color: #717171;
+}
+
+.active, .dot-3:hover {
+  background-color: #717171;
+}
+
+.active, .dot-4:hover {
+  background-color: #717171;
+}
+
+.active, .dot-5:hover {
+  background-color: #717171;
+}
+
+.active, .dot-6:hover {
+  background-color: #717171;
+}
+
+.active, .dot-7:hover {
+  background-color: #717171;
+}
+
+.active, .dot-8:hover {
+  background-color: #717171;
+}
+
+.active, .dot-9:hover {
+  background-color: #717171;
+}
+
 
 /* Fading animation */
 .fade {
@@ -1004,7 +1321,6 @@ and (orientation : portrait) {
     font-family: "Domine";
     font-size: 15px;
     text-align: center;
-    margin-top: -15px;
   }
   .curly {
     display: block;
@@ -1036,6 +1352,14 @@ and (orientation : portrait) {
     padding-top: 5%;
     font-size: 4.9vw;
   }
+
+  .matdescription{
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 4.9vw;
+  }
+
   .homepage{
     background-image: url("../img/mobileback2.jpg");
     background-attachment: fixed;
@@ -1340,7 +1664,6 @@ and (orientation : portrait) {
     font-family: "Domine";
     font-size: 15px;
     text-align: center;
-    margin-top: -15px;
   }
   .curly {
     display: block;
@@ -1685,7 +2008,6 @@ and (orientation : portrait) {
     font-family: "Domine";
     font-size: 15px;
     text-align: center;
-    margin-top: -15px;
   }
   .curly {
     display: block;

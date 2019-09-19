@@ -21,22 +21,22 @@ span.onclick = function() {
 }
 
 var slideIndex = 1;
-showSlides(slideIndex);
+//showSlides(slideIndex, 'mySlides');
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, classname, dotname) {
+  showSlides(slideIndex += n, classname, dotname);
 }
 
 // thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, classname, dotname) {
+  showSlides(slideIndex = n, classname, dotname);
 }
 
-function showSlides(n) {
+function showSlides(n, classname, dotname) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var slides = document.getElementsByClassName(classname);
+  var dots = document.getElementsByClassName(dotname);
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -47,3 +47,15 @@ function showSlides(n) {
 }
 
 
+var prevScrollpos = window.pageYOffset;
+window.addEventListener('scroll', scrollFunction);
+function scrollFunction() {
+  window.alert("scrolling");
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("newnav").style.top = "0";
+  } else {
+    document.getElementById("newnav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}

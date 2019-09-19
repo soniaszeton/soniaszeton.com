@@ -1,24 +1,24 @@
 #!/bin/bash
 
-# copy the latest website css files out to S3
-#for file in `find . -type f | grep -i "\.css"`; do
-#    echo "pushing ${file:2}";
-#    aws --region us-east-1 s3api put-object \
-#        --bucket soniaszeton.com \
-#        --content-type text/css \
-#        --key ${file:2} \
-#        --body ${file}
-#done
+ copy the latest website css files out to S3
+for file in `find . -type f | grep -i "\.css"`; do
+    echo "pushing ${file:2}";
+    aws --region us-east-1 s3api put-object \
+        --bucket soniaszeton.com \
+        --content-type text/css \
+        --key ${file:2} \
+        --body ${file}
+done
 
-# copy the latest website js files out to S3
-#for file in `find . -type f | grep -i "\.js"`; do
-#    echo "pushing ${file:2}";
-#    aws --region us-east-1 s3api put-object \
-#        --bucket soniaszeton.com \
-#        --content-type text/javascript \
-#        --key ${file:2} \
-#        --body ${file}
-#done
+ copy the latest website js files out to S3
+for file in `find . -type f | grep -i "\.js"`; do
+    echo "pushing ${file:2}";
+    aws --region us-east-1 s3api put-object \
+        --bucket soniaszeton.com \
+        --content-type text/javascript \
+        --key ${file:2} \
+        --body ${file}
+done
 
 # copy the latest website html files out to S3
 for file in `find . -type f | grep "\.html"`; do
