@@ -1,6 +1,6 @@
 #!/bin/bash
 
- copy the latest website css files out to S3
+# copy the latest website css files out to S3
 for file in `find . -type f | grep -i "\.css"`; do
     echo "pushing ${file:2}";
     aws --region us-east-1 s3api put-object \
@@ -10,7 +10,7 @@ for file in `find . -type f | grep -i "\.css"`; do
         --body ${file}
 done
 
- copy the latest website js files out to S3
+# copy the latest website js files out to S3
 for file in `find . -type f | grep -i "\.js"`; do
     echo "pushing ${file:2}";
     aws --region us-east-1 s3api put-object \
@@ -30,7 +30,7 @@ for file in `find . -type f | grep "\.html"`; do
         --body ${file}
 done
 
-## copy the latest website jpg files out to S3
+# copy the latest website jpg files out to S3
 #for file in `find . -type f | grep -i -E "\.jpe?g"`; do
 #    echo "pushing ${file:2}";
 #    aws --region us-east-1 s3api put-object \
