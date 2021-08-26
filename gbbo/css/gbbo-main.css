@@ -1,0 +1,544 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+@font-face {
+   font-family: Mostra Nuova;
+   src: url'fonts/MostraNuova.otf';
+}
+
+body{
+  margin: 0;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+p{
+  font-size: 20px;
+}
+
+.name{
+  font-family: Mostra Nuova, Montserrat, san-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #0E005A;
+  padding-top: 8%;
+}
+
+.season{
+  font-family: Mostra Nuova, Montserrat, san-serif;
+  font-size: 35px;
+  color: #ED1C24;
+  margin-top: -30px;
+}
+
+.category{
+  font-family: Mostra Nuova, Montserrat, san-serif;
+  font-size: 22px;
+  color: black;
+  padding-bottom: 8%;
+}
+
+.finalist{
+  font-family: Mostra Nuova, Montserrat, san-serif;
+  font-size: 22px;
+  color: #662D91;
+}
+
+.container{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.tcs-back {
+  background-image: url("../img/tcs-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.performance-back {
+  background-image: url("../img/performance-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.peter-back {
+  background-image: url("../img/peter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.dave-back {
+  background-image: url("../img/dave-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.laura-back {
+  background-image: url("../img/laura-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.hermine-back {
+  background-image: url("../img/hermine-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.lottie-back {
+  background-image: url("../img/lottie-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.linda-back {
+  background-image: url("../img/linda-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.loriea-back {
+  background-image: url("../img/loriea-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.rowan-back {
+  background-image: url("../img/rowan-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.mak-back {
+  background-image: url("../img/mak-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.sura-back {
+  background-image: url("../img/sura-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.mark-back {
+  background-image: url("../img/mark-l-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.marc-back {
+  background-image: url("../img/marc-e-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.header-cotsb {
+  background-image: url("../img/cotsb/cotsb-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -55px;
+}
+
+.row {
+  display: flex;
+}
+
+.half-column {
+  flex: 50%;
+}
+
+.dh-half {
+  flex: 50%;
+  border-right: 2px solid #ececec;
+  padding-right: 20px;
+}
+
+.tenth-column {
+  flex: 10%;
+}
+
+.five-perc{
+  flex: 5%;
+}
+
+.sixth-column {
+  flex: 16.6%;
+}
+
+.fivesixths-column {
+  flex: 83.3%;
+}
+
+.fourth-column {
+  flex: 25%;
+}
+
+.two-thirds {
+  flex: 66.6%;
+}
+
+.third {
+  flex: 33.3%;
+}
+
+.fifth {
+  flex: 20%;
+}
+
+table, td, th {
+  border: 3px solid black;
+}
+
+td{
+  font-family: Mostra Nuova, Montserrat, san-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 9%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.spacer{
+  margin-top: 50px;
+}
+
+.spacer-big{
+  margin-top: 100px;
+}
+
+.spacer-small{
+  margin-top: 25px;
+}
+
+.first{
+  background-color: #0E005A;
+  color: white;
+}
+
+.last{
+  background-color: #ED1C24;
+  color: white;
+}
+
+.tc-bottom{
+  background-color: orange;
+  color: white;
+}
+
+.tc-top{
+  background-color: #0071bc;
+  color: white;
+}
+
+.out{
+  background-color: #555555;
+  color: white;
+}
+
+.rank{
+  font-size: 18px;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding-right: 5px;
+}
+
+.tcs-rank{
+  font-size: 30px;
+  border: none;
+  border-left: 3px solid white;
+  padding-right: 5px;
+  color: #808080;
+}
+
+.tcs-week{
+  font-size: 30px;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 3px solid white;
+  color: #808080;
+}
+
+.tcs-blank{
+  border: 3px solid white;
+}
+
+.tcs{
+  font-size: 110px;
+  font-weight: bold;
+  font-family: Mostra Nuova, Montserrat, san-serif;
+  text-align: right;
+  padding-right: 25px;
+  padding-bottom:0px;
+  margin-bottom:10px;
+  margin-top:5px;
+}
+
+.subtitle{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Mostra Nuova, Montserrat, san-serif;
+  color: black;
+}
+
+.tcs-text{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Mostra Nuova, Montserrat, san-serif;
+  color: black;
+  margin-bottom:0px;
+  padding-bottom:0px;
+  padding-top:20px;
+  margin-top:0px;
+}
+
+body{
+  margin-top: 0px;
+  font-family: Mostra Nuova, Montserrat, san-serif;
+}
+
+img.performance{
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.fifty{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.centered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.week{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.showstopper{
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.cotsbpic{
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme{
+  text-align: center;
+  font-weight: 700;
+}
+
+.SStext{
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #0E005A;
+}
+
+.handshake{
+  font-size: 175px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #0E005A;
+}
+
+.weeks-line{
+  background: #000; 
+  height:1px; 
+  margin-top:10px;
+  width: 85%;
+}
+
+.blue{
+  color: #0E005A;
+}
+
+.lightblue{
+  color: #0071bc;
+}
+
+.gray{
+  color: #808080;
+}
+
+.orange{
+  color: #F7931E;
+}
+
+.red{
+  color: #ED1C24;
+}
+
+.darkred{
+  color: #C1272D;
+}
+
+.purple{
+  color: #662D91;
+}
+
+.cotsb-title{
+  font-size: 70px;
+  text-align: center;
+  color: #0E005A;
+  padding-top: 8%;
+  margin-bottom: 0px;
+}
+
+.cotsb-subtitle{
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  padding-bottom: 9%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0E005A;
+}
+.cotsb-season{
+  font-size: 100px;
+  text-align: center;
+  color: #808080;
+  margin-top:0px;
+}
+
+.cotsb-name{
+  font-size: 28px;
+  text-align: center;
+  color: #808080;
+  margin-top: 10px;
+  margin-bottom:0px;
+}
+.cotsb-text{
+  font-size: 26px;
+  text-align: center;
+  color: #808080;
+  margin-bottom: 0px;
+}
+
+.cotsb-theme{
+  font-size: 20px;
+  text-align: center;
+  color: #808080;
+  margin-top: 0px;
+}
+
+hr.line1 {
+  border-top: 1px solid light gray;
+  margin-bottom: 35px;
+}
+
+.highcharts-title{
+  font-size: 45px;
+}
+
+.handshake-pad{
+  padding-top: 27%; 
+}
+
+.handshake-pad-medium{
+  padding-top: 17%; 
+}
+
+.handshake-pad-third{
+  padding-top: 8%; 
+}
+
+.cotsb-pad{
+  padding-top: 12%;
+}
+
+.cotsb-pad2{
+  padding-top: 7%;
+}
+
+.cotsb-pad3{
+  padding-top: 10%;
+}
+
+.variables{
+  font-size: 22px;
+}
+
+.half-pad{
+   padding-left: 25px;
+}
+
+.rotate{
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.tcs-label{
+  width: 40px;
+}
+
+.scale-title{
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.scale-subtitle{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.tcs-avg{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.performance-pad{
+  padding-left: 14%;
+}
+
+.performance-pad2{
+  padding-left: 18%;
+}

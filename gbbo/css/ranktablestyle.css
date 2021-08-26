@@ -1,0 +1,274 @@
+h2{
+  font-size: 30px;
+}
+
+.name{
+  font-family: Mostra Nuova, Helvetica, san-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #0E005A;
+  padding-top: 8%;
+}
+
+.season{
+  font-family: Mostra Nuova, Helvetica, san-serif;
+  font-size: 35px;
+  color: #ED1C24;
+  margin-top: -30px;
+}
+
+.category{
+  font-family: Mostra Nuova, Helvetica, san-serif;
+  font-size: 22px;
+  color: black;
+  padding-bottom: 8%;
+}
+
+.finalist{
+  font-family: Mostra Nuova, Helvetica, san-serif;
+  font-size: 22px;
+  color: #662D91;
+}
+
+.container{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.header-image {
+  background-image: url("../img/peter_header-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+.header-cotsb {
+  background-image: url("../img/cotsb-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -55px;
+}
+
+.header-s11 {
+  background-image: url("../img/season-11/season11header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -55px;
+}
+
+.row {
+  display: flex;
+}
+
+.half-column {
+  flex: 50%;
+}
+
+.tenth-column {
+  flex: 10%;
+}
+
+.sixth-column {
+  flex: 16.6%;
+}
+
+.fivesixths-column {
+  flex: 83.3%;
+}
+
+.fourth-column {
+  flex: 25%;
+}
+
+table, td, th {
+  border: 2px solid black;
+}
+
+td{
+  font-family: Mostra Nuova, Helvetica, san-serif;
+  font-size: 60px;
+  color: #808080;
+  font-weight: bold;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tablecat{
+  font-size: 20px;
+  color: black;
+  border-top: white;
+  text-align: center;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.phhright{
+  font-size: 20px;
+  color: black;
+  border-top: white;
+  text-align: center;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.noleft{
+  border-left: 2px solid white;
+}
+
+.noright{
+  border-right: 2px solid white;
+}
+
+.spacer{
+  margin-top: 50px;
+}
+
+.first{
+  background-color: #0E005A;
+  color: white;
+}
+
+.rank{
+  font-size: 18px;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding-right: 5px;
+}
+
+body{
+  margin-top: 0px;
+  font-family: Mostra Nuova, Helvetica, san-serif;
+}
+
+img.rankcircle{
+  float: left;
+  width: 70px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+img.pictest{
+  width: 80px;
+  padding-top: 15px;
+}
+
+.bakername{
+  font-size: 50px;
+}
+
+.theme{
+  text-align: center;
+  font-weight: 700;
+}
+
+.SStext{
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #0E005A;
+}
+
+.handshake{
+  font-size: 150px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #0E005A;
+}
+
+.weeks-line{
+  background: #000; 
+  height:1px; 
+  margin-top:10px;
+  width: 85%;
+}
+
+.blue{
+  color: #0E005A;
+}
+
+.lightblue{
+  color: #0071BC;
+}
+
+.red{
+  color: #ED1C24;
+}
+
+.orange{
+  color: #FF8302;
+}
+
+.darkred{
+  color: #C1272D;
+}
+
+.purple{
+  color: #662D91;
+}
+.purpleback{
+  background-color: rgba(255, 0, 0, 0.4);
+  color: black;
+  opacity: 0.2;
+}
+
+.cotsb-title{
+  font-size: 80px;
+  text-align: center;
+  color: #0E005A;
+  padding-top: 8%;
+  margin-bottom: 0px;
+}
+
+.cotsb-subtitle{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  padding-bottom: 9%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0E005A;
+}
+.cotsb-season{
+  font-size: 100px;
+  text-align: center;
+  color: #808080;
+  margin-top:0px;
+}
+
+.cotsb-name{
+  font-size: 28px;
+  text-align: center;
+  color: #808080;
+  margin-top: 10px;
+  margin-bottom:0px;
+}
+.cotsb-text{
+  font-size: 26px;
+  text-align: center;
+  color: #808080;
+  margin-bottom: 0px;
+}
+
+.cotsb-theme{
+  font-size: 22px;
+  text-align: center;
+  color: #808080;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+hr.line1 {
+  border-top: 1px solid light gray;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+

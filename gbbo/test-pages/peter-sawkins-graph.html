@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/gbbo-main.css">
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+        const chart = Highcharts.chart('sonia5', {
+chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: 'pie'
+    },
+    title: {
+      text: '6.1',
+      y:225
+    },
+  legend:{
+    enabled:false
+  },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: true,
+          formatter:function(){
+            return this.key+ ': ' + this.y + '%';
+          }
+        },
+        showInLegend: true
+      }
+    },
+    series: [{
+      name: 'Composition',
+      colorByPoint: true,
+        innerSize: '70%',
+      data: [{
+        name: 'Star Baker',
+        color: '#0E005A',
+        y: 22.22,
+      }, {
+        name: 'In the Running for Star Baker',
+        color: '#0071BC',
+        y: 22.22
+      }, {
+        name: 'Middle of the Pack',
+        color: '#808080',
+        y: 33.33 
+      }, {
+        name: 'In Danger of Elimination',
+        color: '#ED1C24',
+        y: 22.22
+      }]
+    }]
+  });
+});
+</script>
+<style>
+#sonia5 {
+  min-width: 310px;
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto
+}
+</style>
+</head>
+<body>
+<div class="header-image">
+<div class="container">
+  <h1 class="name">Peter Sawkins</h1>
+  <h2 class="season">Season 11</h2>
+  <p class="category"><b>Finishing Place:</b> <span class="finalist">Winner</span></br>
+  <b>Profession: </b>Accounting & Finance Student</br>
+  <b>Hometown: </b>Edinburgh
+  </p>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="half-column">
+      <p class="tcs-text" style="text-align: center;">Performance Score</p>
+      <div id="sonia5" style="width:95%; height:430px;"></div>
+    </div>
+    <div class="half-column">
+      <div class="spacer"></div>
+      <div class="row">
+        <div class="half-column">
+          <p class="tcs">67.1</p>
+        </div>
+        <div class="half-column">
+          <p class="tcs-text">Technical</br>Challenge Score</p>
+        </div>
+       </div>
+      <table>
+        <tr>
+          <td class="rank">Rank</td>
+          <td>2</td>
+          <td>10</td>
+          <td>4</td>
+          <td>4</td>
+          <td class="first">1</td>
+          <td class="first">1</td>
+          <td>2</td>
+          <td>4</td>
+          <td class="first">1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td class="rank">Total Bakers</td>
+          <td>12</td>
+          <td>11</td>
+          <td>10</td>
+          <td>9</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>4</td>
+          <td>3</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <h2 style="text-align: center;">Week-by-Week</h2>
+      <div class="row">
+        <div class="tenth-column">
+          <img class="week" src="img/start-sb.png" alt="star baker icon">
+          <p class="theme">Cake</p>
+        </div>
+        <div class="tenth-column">
+          <img class="week" src="img/middle-neutral.png" alt="neutral week icon">
+          <p class="theme">Biscuits</p>
+        </div>
+        <div class="tenth-column">
+          <img class="week" src="img/middle-danger.png" alt="in danger icon">
+          <p class="theme">Bread</p>
+        </div>
+        <div class="tenth-column">
+          <img class="week" src="img/middle-top.png" alt="top baker icon">
+          <p class="theme">Chocolate</p>
+        </div>
+        <div class="tenth-column">
+          <img class="week" src="img/middle-top.png" alt="top baker icon">
+          <p class="theme">Pastry</p>
+        </div>
+        <div class="tenth-column">
+          <img class="week" src="img/middle-neutral.png" alt="neutral week icon">
+          <p class="theme">Japanese</p>
+        </div>
+        <div class="tenth-column">
+          <img class="week" src="img/middle-neutral.png" alt="neutral week icon">
+          <p class="theme">The 80's</p>
+        </div>
+        <div class="tenth-column">
+          <img class="week" src="img/middle-danger.png" alt="in danger icon">
+          <p class="theme">Desserts</p>
+        </div>
+        <div class="tenth-column">
+          <img class="week" src="img/middle-sb.png" alt="star baker icon">
+          <p class="theme">Pâtisserie</p>
+        </div>
+        <div class="tenth-column">
+          <img class="week" src="img/end-winner.png" alt="season winner icon">
+          <p class="theme">Final</p>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="row">
+        <div class="half-column">
+          <h2 style="text-align: center;">Star Baker Showstoppers</h2>
+        </div>
+        <div class="half-column">
+        </div>
+      </div>
+      <div class="row">
+        <div class="fourth-column">
+          <img class="showstopper" src="img/peter-sb-1.png" alt="Cake bust of Sir Chris">
+          <p class="SStext">In Honour of Sir Chris</br><b>Week 1: Cake</b></p>
+        </div>
+        <div class="fourth-column">
+          <img class="showstopper" src="img/peter-sb-2.png" alt="stacked cake showstopper">
+          <p class="SStext">Chocolate, Raspberry & Pistachio Cube Cakes</br><b>Week 9: Pâtisserie</b></p>
+        </div>
+        <div class="fourth-column">
+        </div>
+        <div class="fourth-column">
+          <p class="handshake">1</p>
+          <h2 class="blue" style="text-align: center; margin-top: 0px;">Paul Hollywood Handshake™</h2>
+        </div>
+      </div>
+</div>
+  </div>
+
+</body>
+</html>

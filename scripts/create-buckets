@@ -1,0 +1,30 @@
+#!/bin/bash
+SCRIPTS=`dirname $0`
+
+echo "Creating the environment bucket..."
+aws --region us-east-1 s3api create-bucket \
+    --acl private \
+    --bucket soniaszeton-aws-us-east-1
+echo
+
+echo "Blocking public access to the environment bucket..."
+aws --region us-east-1 s3api put-public-access-block \
+    --bucket soniaszeton-aws-us-east-1 \
+    --public-access-block-configuration BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true
+echo
+
+echo "Pushing the latest version of the template out to S3..."
+aws --region us-east-1 s3api put-object \
+    --bucket soniaszeton-aws-us-east-1 \
+    --key templates/s3-buckets.json \
+    --content-type "application/json" \
+    --body ./templates/s3-buckets.json
+echo
+
+echo "Creating the cloudformation stack..."
+aws --region us-east-1 cloudformation create-stack \
+    --stack-name soniaszeton-buckets-us-east-1 \
+    --template-url https://s3.amazonaws.com/soniaszeton-aws-us-east-1/templates/s3-buckets.json 
+echo
+
+echo "Done."

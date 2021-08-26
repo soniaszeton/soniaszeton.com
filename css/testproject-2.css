@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Domine|Montserrat');
+
+h1{
+  font-family: Montserrat;
+}
+
+h2{
+  font-family: Montserrat;
+  font-weight: 900;
+}
+
+h3{
+  font-family: Montserrat;
+  color: #616161;
+}
+
+p{
+  font-family: Montserrat;
+  font-size: 18px;
+  color: #616161;
+}
+
+.white{
+  color: white;
+}
+
+.project-title{
+  font-size: 40px;
+}
+
+.service-title{
+  font-size: 30px;
+}
+
+.service{
+  margin-top: -20px;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+img.projectlogo{
+  width: 85%; 
+}
+
+img.poem{
+  width: 99%; 
+}
+
+img.full{
+  width: 100%;
+}
+
+.themargins{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.sagebackground{
+  background-color: #A9BA9D;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+}
+
+.fifth{
+  flex: 20%;
+}
+.three-fifths{
+  flex: 60%;
+  margin-right: 25px;
+}
+
+.three-fourths{
+  flex: 75%;
+  padding-right: 25px;
+}
+
+.fourth-separator{
+  flex: 25%;
+  border-left: 2px solid lavender;
+  padding-left: 25px;
+}
+
+.thirty-seven{
+  flex: 37%;
+}
+
+.sixty-three{
+  flex: 63%;
+}
+
+.fifty-nine{
+  flex: 59%;
+}
+
+.forty-one{
+  flex: 41%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.poems-background {
+  background-image: url("../img/poem-background.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:85px;
+}
+
+.stratom-background {
+  background-image: url("../img/stratom-header.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:105px;
+}
+
+.boxed-title{
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  border: 3px solid white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+img.center{
+  display: block;
+  margin: auto;
+}
+
+.comparison-slider-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  background-color: white;
+}
+
+.comparison-slider {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  border: 5px white solid;
+  box-sizing: border-box;
+}
+
+.resize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.divider {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(256, 256, 256, 0.2);
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  margin-left: -1px;
+  cursor: ew-resize;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -9px;
+    top: 50%;
+    margin-top: -10px;
+    background-color: white;
+    transform: rotate(45deg);
+    transition: all 0.1s ease-in-out;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: -5px;
+    top: 50%;
+    margin-top: -6px;
+    background-color: white;
+    transform: rotate(45deg);
+    transition: all 0.1s ease-in-out;
+  }
+  &.draggable{
+    &:before {
+    width: 30px;
+    height: 30px;
+    left: -14px;
+    margin-top: -15px;
+    }
+  &:after {
+    width: 20px;
+    height: 20px;
+    left: -9px;
+    margin-top: -10px;
+    background-color: #555;
+    }
+  }
+}

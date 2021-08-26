@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Domine|Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,46 +10,57 @@
   box-sizing: border-box;
 }
 
-/*
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #333;
+body{
+  margin: 0;
+  padding-top: 55px;
 }
 
-a {
-  color: #fff;
-}
-*/
 
-.matdescription{
-    width: 70%;
-    margin: auto;
-    padding-top: 3%;
-    font-size: 16pt;
-    font-style: italic;
+a:link { 
+  color: rgba(0,0,0,1);
+  text-decoration: none;
 }
 
-.matbar{
-  width: 25%;
-  height: 3px;
-  margin: auto;
-  background-color: black;
-  margin-top: 3%;
-  border-radius: 10px;
-}
-
-/*
-.material{
-  font-family: 'Montserrat';
-  font-size: 6vw;
-  text-align: center;
-  margin-top: 6%;
-  margin-bottom: 2%;
+a:visited{
   color: rgba(0,0,0,1);
 }
-*/
+  
+a:hover {
+  color: DarkGray;
+}
+
+#newnav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 1;
+}
+
+#newnav img {
+  float: left;
+  display: block;
+  height: 45px;
+  padding: 5px;
+  margin-left: 3%;
+}
+
+#newnav a:hover {
+  color: DarkGray;
+}
+
+.testingmenu {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  padding-top: 16px;
+  font-family: "Montserrat";
+  margin-right: 2%;
+}
+
 
 .row {
   width: 100%;
@@ -209,15 +220,16 @@ Causing overlay to be too tall
   font-size: 25px;
   font-style: italic;
   text-align: left;
-  color: rgba(134,135,135,1);
+  color: #616161;
   margin-top: -4%;
   margin-bottom: 2%;
 }
 .port p {
-  font-family: "Domine";
+  font-family: "Montserrat";
   font-size: 18px;
   margin-top: 2%;
   line-height: 20pt;
+  color: #616161;
 }
 .port > * {
   opacity: 0;
@@ -268,3 +280,62 @@ Causing overlay to be too tall
     position: relative;
   }
 }
+
+.otcs-background{
+  background-image: url("../img/otcs-background.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:70px;
+  padding-bottom:15px;
+}
+
+.boxed-title{
+  font-family: Montserrat;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  border: 3px solid white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.white{
+  color: white;
+}
+
+.designer{
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+
+.otcs-sep{
+  width: 20%;
+  border: 1px solid #000000;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+
+.whitefull{
+  width: 30%;
+  border: 1px solid #ffffff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.process{
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000:
+  text-decoration: none;
+  padding-top: 15px;
+}
+

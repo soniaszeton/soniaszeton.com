@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+  margin: 0;
+  padding-top: 55px;
+}
+
+h1{
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+h2{
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+h3{
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #616161;
+}
+
+p{
+  font-family: Montserrat;
+  font-size: 18px;
+  color: #616161;
+}
+
+#newnav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 1;
+}
+
+.testingmenu {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  padding-top: 15px;
+  font-family: "Montserrat";
+  margin-right: 2%;
+}
+
+#newnav img {
+  float: left;
+  display: block;
+  height: 45px;
+  padding: 5px;
+  margin-left: 3%;
+}
+
+#newnav a:hover {
+  color: DarkGray;
+}
+
+a:link {
+  color: rgba(0,0,0,1);
+  text-decoration: none;
+}
+
+a:visited{
+  color: rgba(0,0,0,1);
+}
+
+.resume-title{
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: white;
+  text-align: center;
+}
+
+.designer{
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+
+.white{
+  color: white;
+}
+
+.plum{
+  color: #422541;
+}
+
+.maroon{
+  color: #7e3b5d;
+}
+
+.maroon2{
+  color: #7E395D;
+}
+
+.dusty-purp{
+  color: #843b62;
+}
+
+.green{
+  color: #2f4f4f;
+}
+
+.lightgreen{
+  color: #A3AD9A;
+}
+.project-title{
+  font-size: 40px;
+}
+
+.service-title{
+  font-size: 30px;
+}
+
+.service{
+  margin-top: -20px;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+img.projectlogo{
+  width: 85%; 
+}
+
+img.poem{
+  width: 99%; 
+}
+
+img.full{
+  width: 100%;
+}
+
+img.left{
+  width: 99%;
+  float: left;
+}
+
+img.right{
+  width: 99%;
+  float: right;
+}
+
+.themargins{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.upbeet-margins{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.sagebackground{
+  background-color: #A9BA9D;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+}
+
+.half{
+  flex: 50%;
+}
+
+.third{
+  flex: 33.3%;
+}
+
+.two-thirds{
+  flex: 66.6%;
+}
+
+.fifth{
+  flex: 20%;
+}
+
+.two-fifths{
+  flex: 40%;
+}
+
+.three-fifths{
+  flex: 60%;
+}
+
+.four-fifths{
+  flex: 80%;
+}
+
+.three-fourths{
+  flex: 75%;
+  padding-right: 25px;
+}
+
+.fourth{
+  flex: 25%;
+}
+
+.fourth-separator{
+  flex: 25%;
+  border-left: 2px solid lavender;
+  padding-left: 25px;
+}
+
+.thirty{
+  flex: 28%;
+}
+
+.seventy{
+  flex: 72%;
+}
+
+.thirty-seven{
+  flex: 37%;
+}
+
+.sixty-three{
+  flex: 63%;
+}
+
+.fifty-nine{
+  flex: 59%;
+}
+
+.forty-one{
+  flex: 41%;
+}
+
+.fourty-two{
+  flex: 42.3%;
+}
+
+.fifty-eight{
+  flex: 57.7%;
+}
+
+.thirty-four{
+  flex: 34.3%;
+}
+
+.eighteen{
+  flex: 18.8%;
+}
+
+.fourty-seven{
+  flex: 46.9%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.resume-background{
+  background-image: url("../img/resume-background4.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:45px;
+  padding-bottom:10px;
+}
+
+.poems-background {
+  background-image: url("../img/poem-background.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:85px;
+}
+
+.projects-background {
+  background-image: url("../img/projects-background.jpg");
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:60px;
+  padding-bottom:35px;
+}
+
+.paperink-background {
+  background-image: url("../img/paperink-background2.jpg");
+  height: 49%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:100px;
+}
+
+.upbeet-background {
+  background-image: url("../img/upbeet-background.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:55px;
+  padding-bottom:30px;
+}
+
+.stratom-background {
+  background-image: url("../img/stratom-header.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:85px;
+}
+
+.mapr-background {
+  background-image: url("../img/mapr-header.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:85px;
+}
+
+.moonrise-background {
+  background-image: url("../img/moonrise-back.jpeg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.western-background {
+  background-image: url("../img/western-header.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:85px;
+}
+
+.southpointe-background {
+  background-image: url("../img/southpointe-background.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:85px;
+}
+
+.beekind-background {
+  background-image: url("../img/beekind-back.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:60px;
+  padding-bottom:25px;
+}
+
+.whale-background {
+  background-image: url("../img/whale-background2.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:85px;
+}
+
+.meal-background {
+  background-image: url("../img/lastmeal.png");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:85px;
+}
+
+.infographics-background {
+  background-image: url("../img/infographics-background.jpg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:85px;
+}
+
+.boxed-title{
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  border: 3px solid white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+img.center{
+  display: block;
+  margin: auto;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #621940;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 50px;
+}
+
+img.social{
+  float: right;
+  display: inline;
+  width: 35px;
+  padding-top: 13px;
+}
+
+.whitefull{
+  width: 30%;
+  border: 1px solid white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.res-sep{
+  width: 90%;
+  border: 1px solid #ececec;
+  margin-left: 0px;
+}
+
+.upbeet-sep{
+  width: 20%;
+  border: 1px solid #ffffff;
+  margin-left: 0px;
+  margin-top: -20px;
+}
+
+ul.resume {
+  list-style-type: square;
+  color: #616161;
+  font-family: Montserrat;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+li {
+  padding-left:10px;
+  padding-bottom:5px;
+}
+
+img.infographic{
+  width: 65%;
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+img.info-logo{
+  width: 25%;
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.mealmobile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -145px;
+}
+
+.upbeet-title{
+  font-family: Quicksand;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.upbeet-body{
+  font-family: Quicksand;
+  font-size: 21px;
+  font-weight: 400;
+  color: white;
+}
+
+img.project-upbeet{
+  width: 49%;
+  padding-left: 7px;
+  padding-top: 12px;
+}
+
+img.project-south{
+  width: 49%;
+  display: inline;
+  float: right;
+  padding-top: 12px;
+}
+
+.overlay-container{
+  position: relative;
+}
+
+.overlay-container-half{
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  overflow: hidden;
+  width: 99%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.overlay-half {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  overflow: hidden;
+  width: 99%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.overlay-container-half:hover .overlay-half {
+  height: 50%;
+  bottom: 50%;
+}
+
+.overlay-container:hover .overlay {
+  height: 100%;
+}
+
+.overlay-text {
+  font-family: Montserrat;
+  font-weight: 500;
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

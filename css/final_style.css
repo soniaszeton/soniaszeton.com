@@ -42,11 +42,6 @@ header{
   float: left;
   display: block;
   height: 45px;
-/*
-  width: 21%;
-  margin-top: .4%;
-  margin-bottom: .4%;
-*/
   padding: 5px;
   margin-left: 3%;
 }
@@ -2469,4 +2464,27 @@ and (orientation : portrait) {
     margin-top: 5%;
     z-index: 200;
   }
+
+.themargins{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.row{
+  display: flex;
+}
+
+.fifth{
+  flex: 20%;
+}
+
+.three-fifths{
+  flex: 60%;
+}
+
+img.projectlogo{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
