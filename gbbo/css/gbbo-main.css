@@ -62,6 +62,13 @@ p{
   margin-top: -40px;
 }
 
+.cotsb-back {
+  background-image: url("../img/cotsb-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
 .performance-back {
   background-image: url("../img/performance-back.jpg");
   background-repeat: no-repeat;
@@ -194,6 +201,10 @@ p{
   flex: 25%;
 }
 
+.eighth{
+  flex: 12.5%;
+}
+
 .two-thirds {
   flex: 66.6%;
 }
@@ -204,6 +215,16 @@ p{
 
 .fifth {
   flex: 20%;
+}
+
+.hs-season {
+  flex: 15%;
+}
+
+.hs-bake {
+  flex: 21.25%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 table, td, th {
@@ -363,6 +384,13 @@ img.cotsbpic{
   margin-right: auto;
 }
 
+img.cast{
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .theme{
   text-align: center;
   font-weight: 700;
@@ -439,7 +467,7 @@ img.cotsbpic{
 .cotsb-season{
   font-size: 100px;
   text-align: center;
-  color: #808080;
+  color: black;
   margin-top:0px;
 }
 
@@ -453,7 +481,7 @@ img.cotsbpic{
 .cotsb-text{
   font-size: 26px;
   text-align: center;
-  color: #808080;
+  color: black;
   margin-bottom: 0px;
 }
 
@@ -465,7 +493,7 @@ img.cotsbpic{
 }
 
 hr.line1 {
-  border-top: 1px solid light gray;
+  border-top: 1px solid black;
   margin-bottom: 35px;
 }
 
@@ -541,4 +569,96 @@ hr.line1 {
 
 .performance-pad2{
   padding-left: 18%;
+}
+
+.cast-season{
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.cast-year{
+  font-size: 25px;
+  text-align: center; 
+  margin-top: -30px;
+}
+
+.hs-text{
+  text-align: center;
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+.title-sep {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: black;
+  Xfont-size: 3em;
+  Xbackground-color: lime;
+  line-height: 2;
+}
+
+.title-sep:before, 
+.title-sep:after {
+  display: inline-block;
+  Xheight: 1px; Xbackground-color: #555;
+  content: " ";
+  text-shadow: none;
+  width: 30%;
+  border-top: 1px solid #444;
+  vertical-align: top; /* start from the top */
+  margin-top: 1em; /* then push down half of line-height to end up in the middle */
+}
+
+.title-sep:before {
+  Xmargin: 0 20px 8px 0; /* don't need this if using border instead of height and background-color */
+  margin-right: 1em;
+}
+.title-sep:after {
+  Xmargin: 0 0 8px 20px; 
+  margin-left: 1em;
+}
+
+.f-right{
+  float: right;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.half-column, .fifth, .fourth-column, .third, .two-thirds, .dh-column, .five-perc, .sixth-column, .fivesixth-column, .eighth{
+  flex: 100%;
+}
+
+.tenth-column{
+  flex: 33%;
+}
+
+.spacer-big{
+  margin-top: 10px;  
+}
+
+.spacer{
+  margin-top: 10px;  
+}
+
+.tcs-text {
+  margin-top: 0px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+.tcs{
+  margin-top: 0px;
+  margin-bottom: -105px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 }
